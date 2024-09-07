@@ -454,6 +454,14 @@ footer{
     max-width: 100vw;
   }
 
+  nav.navbar{
+    max-width: 100vw;
+  }
+
+  a.button-download{
+    margin: 0 40vw;
+  }
+
   .navbar-collapse.show, .container-fluid{
     background-color: black;
     display: flex;
@@ -461,20 +469,412 @@ footer{
     text-align: center;
   }
 
+  section.banner{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 100vw;
+    background-color: black;
+    height: 70vh;
+  }
+
+  section.banner video{
+    scale: 3;
+    height: 70vh;
+    max-width: 100vw;
+    background-color: black;
+    object-fit: contain;
+  }
+  .teks{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 10px 0px 10px black;
+  }
+
+  a.button-banner{
+    font-size: 2.2rem;
+    width: 30vw;
+  }
+
+  section.flyer h1 {
+    font-size: 5rem;
+  }
+
+  section.flyer p{
+    font-size: 3rem;
+    width: 70vw;
+  }
+
+  #flyer{
+    font-size: 4rem;
+  }
+
+  section.news-overview h1 {
+    font-size: 4rem;
+  }
+
+  div.card-wrap{
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+  }
+
+  .preview{
+    width: 45vw;
+    margin: 0;
+    height: 50vh;
+  }
+
+  .gambar{
+    width: 45vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+
+  .strip{
+    width: 45vw;
+  }
+
+  .date h5 {
+    font-size: 2rem;
+  }
+
+  .preview h2{
+    font-size: 3rem;
+  }
+
+  .preview p{
+    font-size: 2rem;
+    width: 40vw;
+  }
+
+
     
+}
+
+@media (max-width: 800px){
+  .preview .gambar{
+    min-height: 20vh;
+  }
 }
 
 /* Tablet */
 @media (max-width: 758px) {
+  html {
+    font-size: 65%;
+  }
+
+  body{
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
   a.button-download{
     margin: 0 auto;
     width: 31vw;
     height: 5vh;
     margin: 1.5rem 0;
   }
+
+  nav.navbar{
+    max-width: 100vw;
+  }
+
+  section.banner{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 100vw;
+    background-color: black;
+    height: 70vh;
+  }
+
+  section.banner video{
+    scale: 3;
+    height: 70vh;
+    max-width: 100vw;
+    background-color: black;
+    object-fit: contain;
+  }
+
+  .teks{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 10px 0px 10px black;
+  }
+
+  .button-wrap{
+    flex-direction: column;
+  }
+
+  .button-wrap a.button-banner {
+    width: 80vw;
+    font-size: 2.5rem;
+  }
+
+  section.flyer h1{
+    font-size: 4rem;
+    width: 80vw;
+    text-align: center;
+  }
+
+  section.flyer p{
+    width: 70vw;
+    font-size: 2rem;
+    text-align: justify;
+  }
+
+  #flyer{
+    width: 80vw;
+    font-size: 3rem;
+  }
+
+  section.news-overview{
+    padding: 2rem 0;
+  }
+  section.news-overview h1 {
+    font-size: 4rem;
+  }
+
+  div.card-wrap{
+    flex-direction: column;
+  }
+
+  .preview{
+    width: 85vw;
+    margin: 0;
+  }
+
+  .preview .gambar{
+    width: 85vw;
+    min-height: 25vh;
+    background-size: contain;
+    background-color: black;
+  }
+
+  .date{
+    width: 85vw;
+  }
+
+  .date h5 {
+    font-size: 2rem;
+  }
+
+  .preview h2 {
+    font-size: 3rem;
+  }
+
+  .preview p {
+    font-size: 2rem;
+  }
+
+  .strip{
+    width: 85vw;
+  }
+
+  /* about */
+  .card-about{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-about-img{
+    width: 90vw;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  div.desc p {
+    max-width: 80vw;
+    font-size: 1.5rem;
+  }
+
+  .desc h1{
+    text-align: center;
+  }
+
+  .desc a.button-banner{
+    width: 60vw;
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+
+  div.about-foto{
+    width: 90vw;
+  }
+
+  p.about-text {
+    width: 85vw;
+    font-size: 2rem;
+    text-align: justify;
+  }
+
+  section.invisible-card{
+    flex-direction: column;
+  }
+
+  .inv-card{
+    max-width: none;
+    width: 100vw;
+  }
+
+  .inv-card img {
+    max-width: none;
+    width: 100vw;
+    height: 30vh;
+  }
+
+  .inv-card h1{
+    font-size: 2.8rem;
+  }
+
+  .inv-card p{
+    max-width: none;
+    width: 85vw;
+    font-size: 1.5rem;
+  }
+
+  /* neews */
+  #news-card p{
+    text-align: justify;
+    max-width: none;
+    width: 70vw;
+  }
+
+  #news-card{
+    height: 60vh;
+  }
+
+
+  .footer-top{
+    flex-wrap: wrap;
+  }
+
+
+
 }
   
 /* Mobile Phone */
 @media (max-width: 450px) {
-    
+  html {
+    font-size: 65%;
+  }
+
+  body{
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  a.button-download{
+    margin: 0 auto;
+    width: 31vw;
+    height: 5vh;
+    margin: 1.5rem 0;
+  }
+
+  nav.navbar{
+    max-width: 100vw;
+  }
+
+  section.banner{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 100vw;
+    background-color: black;
+    height: 70vh;
+  }
+
+  section.banner video{
+    scale: 3;
+    height: 70vh;
+    max-width: 100vw;
+    background-color: black;
+    object-fit: contain;
+  }
+
+  .teks{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 10px 0px 10px black;
+  }
+
+  .button-wrap{
+    flex-direction: column;
+  }
+
+  .button-wrap a.button-banner {
+    width: 80vw;
+    font-size: 2.5rem;
+  }
+
+  section.flyer h1{
+    font-size: 4rem;
+    width: 80vw;
+    text-align: center;
+  }
+
+  section.flyer p{
+    width: 70vw;
+    font-size: 2rem;
+    text-align: justify;
+  }
+
+  #flyer{
+    width: 80vw;
+    font-size: 3rem;
+  }
+
+  section.news-overview{
+    padding: 2rem 0;
+  }
+  section.news-overview h1 {
+    font-size: 4rem;
+  }
+
+  div.card-wrap{
+    flex-direction: column;
+  }
+
+  .preview{
+    width: 85vw;
+    margin: 0;
+  }
+
+  .preview .gambar{
+    width: 85vw;
+  }
+
+  .date{
+    width: 85vw;
+  }
+
+  .date h5 {
+    font-size: 2rem;
+  }
+
+  .preview h2 {
+    font-size: 3rem;
+  }
+
+  .preview p {
+    font-size: 2rem;
+  }
+
+  .strip{
+    width: 85vw;
+  }
+
+
+  .footer-top{
+    flex-wrap: wrap;
+  }
 }
