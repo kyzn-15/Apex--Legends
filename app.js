@@ -10,20 +10,8 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.render('index', {
         title: "Home Page",
-        // message: "test Handlebars",
     });
 });
-
-// app.get('/blog', (req,res) => {
-//     const blogs = [
-//         {title: 'Yoshi finds egg', snippet: 'Lorem ipsum dolor sit amet consectetur'},
-//         {title: 'Mario finds stars', snippet: 'Lorem ipsum dolor sit amet consectetur'},
-//         {title: 'How to beat bowser', snippet: 'Lorem ipsum dolor sit amet consectetur'},
-//     ];
-//     res.render('blog',{
-//         blogs : blogs
-//     });
-// });
 
 app.get('/about', (req, res) => {
     res.render('about', {
@@ -35,12 +23,6 @@ app.get('/news', (req, res) => {
         title: "News",
     });
 });
-
-// app.engine('handlebars', handlebars.engine({
-//     helpers: {
-//         add: (num1, num2) => num1 + num2
-//     }
-// }));
 
 app.use((req, res) => {
     res.status(404).send('<h1>404, page not found</h1>')
