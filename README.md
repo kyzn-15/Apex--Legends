@@ -1,4 +1,4 @@
-# Apex Legends Website Clone
+# Apex Legends Website Clone by Kevin Wilbert Johan 11 IPA 1
 
 This is a clone of the Apex Legends official website built using **Express.js** as the backend framework, **Handlebars.js** for templating, and **Bootstrap** for responsive design. The project aims to replicate the layout and functionality of the official site using a lightweight server and front-end technologies.
 
