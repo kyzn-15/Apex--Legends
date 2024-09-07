@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary: rgb(218, 41, 42);
+    --primary-dark: rgb(166, 31, 32);
+    --bg: rgb(101, 74, 36);
+    --broken-white: rgb(255, 247, 236);
+    --gray: rgb(37, 37, 37);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+nav.navbar{
+  background-color: black;
+  font-family: 'Bebas Neue', sans-serif;
+  height: 75px;
+}
+
+a.nav-link{
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+.navbar-collapse.show, .container-fluid{
+  background-color: black;
+}
+
+a.nav-link:hover{
+  color: var(--primary);
+}
+
+ul.dropdown-menu{
+  background-color: var(--primary);
+}
+
+ul.dropdown-menu li a.dropdown-item{
+  color: white;
+  font-size: 1.2rem;
+}
+
+ul.dropdown-menu li a.dropdown-item:hover{
+  background-color: black;
+  color: var(--primary);
+}
+
+span.navbar-toggler-icon{
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+a.button-download{
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: var(--primary);
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 0.2rem;
+  margin: 0 50vw;
+}
+
+a.button-download:hover{
+  background-color: var(--primary-dark);
+}
+
+.teks {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 10px 0px 10px black;
+}
+
+.teks h1{
+    /* font-family: 'Poppins'; */
+    color: white;
+    font-size: 10rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.teks h2{
+    font-size: 5rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+section.banner video{
+  margin-top: 4rem;
+  width: 100vw;
+}
+
+.button-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+a.button-banner{
+    width: 20vw;
+    height: 8vh;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+a.button-banner:hover{
+    background-color: black;
+    color: var(--primary);
+    scale: 1.05;
+    animation: button-hover 0.2s linear;
+}
+
+@keyframes button-hover {
+    0%{
+        scale: 1;
+        background-color: var(--primary);
+        color: white;
+    }
+
+    100%{
+        scale: 1.05;
+        color: var(--primary);
+        background-color: black;
+    }
+}
+
+section.flyer{
+    margin-top: -0.5rem;
+    width: 100vw;
+    height: 50vh;
+    background-image: url(/assets/Apex\ Legends\ Wallpaper\ \(1\).jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+section.flyer h1 {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 10px 0px 10px black;
+}
+
+section.flyer p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 10px 0px 10px black;
+}
+
+section.news-overview{
+  background-color: var(--broken-white);
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-top: -0.5rem;
+}
+
+.card-wrap{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.preview{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  color: white;
+  margin-bottom: 10vh;
+  margin-top: 3vh;
+}
+
+.gambar{
+  width: 30vw;
+  height: 30vh;
+  background-color: gray;
+  background-image: url(/assets/news-1.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1.5rem;
+}
+
+.date{
+  display: flex;
+  align-items: center;
+  width: 30vw;
+}
+
+.date h5{
+  margin: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+#game-name{
+  color: var(--primary);
+}
+
+.preview p{
+  margin-bottom: 19vh;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.strip{
+  width: 30vw;
+  height: 1vh;
+  background-color: var(--primary);
+}
+
+footer{
+  width: 100vw;
+  /* height: 40vh; */
+  display: flex;
+  justify-content: center;
+  background-color: var(--gray);
+}
+
+.footer-wrap{
+  width: 80vw;
+  margin-top: 5rem;
+}
+
+.footer-top {
+  display: flex;
+  gap: 3rem;
+  font-size: 2rem;
+}
+
+.footer-top a{
+  color: white;
+  text-decoration: none;
+}
+
+.footer-top a:hover{
+  color: var(--primary);
+}
+
+.line{
+  width: 80vw;
+  height: 2px;
+  background-color: gray;
+  border-radius: 1rem;
+  margin-top:2rem;
+}
+
+.footer-img-wrap{
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-img-wrap .apex-logo{
+  --size: 15rem;
+  width: var(--size);
+  height: var(--size);
+  background-image: url(/assets/apex-logo-white.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-img-wrap .teen{
+  --size: 15rem;
+  width: var(--size);
+  height: var(--size);
+  background-image: url(/assets/Teen.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+/* Rensponsive */
+@media (max-width: 1200px) {
+  html {
+      font-size: 75%;
+  }
+
+  .navbar-collapse.show, .container-fluid{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+    
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  a.button-download{
+    margin: 0 auto;
+    width: 31vw;
+    height: 5vh;
+    margin: 1.5rem 0;
+  }
+}
+  
+/* Mobile Phone */
+@media (max-width: 450px) {
+    
+}
