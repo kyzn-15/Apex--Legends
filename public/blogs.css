@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary: rgb(218, 41, 42);
+    --primary-dark: rgb(166, 31, 32);
+    --bg: rgb(101, 74, 36);
+    --broken-white: rgb(255, 247, 236);
+    --gray: rgb(37, 37, 37);
+    --dark-gray: rgb(30, 29, 29);
+    --strong-red: rgb(254, 0, 0);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Blogs */
+.blogkamu{
+    display: flex;
+    flex-direction: column;
+    min-height: 150vh;
+}
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 1000px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 10vh;
+    flex: 1;
+    margin-top: 10rem;
+    /* background-color: red; */
+  }
+
+.blog p{
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--dark-gray);
+}
+
+.blog h2{
+    font-size: 4.5rem;
+    color: var(--dark-gray);
+    text-align: center;
+    /* margin-top: 2rem; */
+    /* padding: 2.5rem 0rem 2rem 10rem; */
+}
+.blog a.single{
+    text-align: center;
+    background-color: var(--dark-gray);
+    border-radius: 10px;
+}
+
+a.single {
+    padding: 30px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 0.8rem solid  var(--primary);
+}
+a.single h3{
+    font-size: 2rem;
+    color: white;
+}
+a.single p{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/* Create Blog */
+.create-blog {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: var(--dark-gray);
+    margin-top: 8rem;
+  }
+  
+.create-blog form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-blog label {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.create-blog input[type="text"],
+.create-blog textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.create-blog textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.create-blog button {
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.create-blog button:hover {
+  background-color: var(--primary-dark);
+}
+/* delete */
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25vh;
+  margin-top: 7rem;
+}
+
+.details h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.details .content {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.details .content p {
+  color: white;
+}
+
+.details .delete {
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  max-width: 100px;
+  cursor: pointer;
+}
+
+.details .delete:hover {
+  background-color: #e60000;
+}
+
+.content-guidelines {
+  margin-top: 5vh;
+  margin-bottom: 50px;
+}
+
+.content-guidelines span {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.content-guidelines p {
+  color: black;
+}  
+
+
+/* Media Queries */
+@media (max-width: 1200px){
+
+}
+
+@media (max-width: 758px){
+
+}
+
+@media (max-width: 450px) {
+
+}
