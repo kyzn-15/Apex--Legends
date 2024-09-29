@@ -1,7 +1,7 @@
 <html lang="en">
     <%- include("./partials/head.ejs") %>
 
-    <body class="deleteblog" style="background-color: rgb(255, 247, 236);">
+    <body class="deleteblog" id="deleteblog" style="background-color: rgb(255, 247, 236);">
         <%- include("./partials/nav.ejs") %>
 
         <div class="details">
@@ -25,7 +25,7 @@
                 .then(res => res.json())
                 .then(data => {
                     if (data.redirect) {
-                        window.location.href = data.redirect; // Redirect to /blogs after deletion
+                        window.location.href = data.redirect; 
                     }
                 })
                 .catch(err => console.log(err));

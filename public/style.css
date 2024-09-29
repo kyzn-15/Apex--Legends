@@ -476,7 +476,8 @@ footer{
   }
 
   a.button-download{
-    margin: 0 40vw;
+    margin: 0;
+    margin-left: 30vw;
   }
 
   .navbar-collapse.show, .container-fluid{
